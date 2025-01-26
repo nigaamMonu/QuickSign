@@ -4,13 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Signature</title>
+  <link href="style.css" rel="stylesheet">
+  
 </head>
 <body>
-  <div>
+  <div class="main">
     <div class="top">
       <div class="black">
         <p>Text Color Picker</p>
+        <input class="form-control" type="color" id="ColorPicker"/>
       </div>
+
+      <div class="black">
+        <p>Background</p>
+        <input class="form-control" type="color" id="canvaColor"/>
+      </div>
+
+      <div class="black">
+        <p>Font Size</p>
+        <select id="fontSize">
+          <option value="5">5px</option>
+          <option value="10">10px</option>
+          <option value="20">20px</option>
+          <option value="30">30px</option>
+          <option value="35">35px</option>
+          <option value="40">40px</option>
+
+        </select>
+      </div>
+
+    </div>
+
+    <canvas class="canvas" id="myCanvas" ></canvas>
+
+    <div class="bottom">
+      <button type="button" class="btn btn-danger" id="clearButton">Clear</button>
+      <button type="button" class="btn btn-succes" id="saveButton">Save & Download</button>
+      <button type="button" class="btn btn-warning" id="retrieveButton">Retrive saved sign</button>
     </div>
   </div>
 </body>
